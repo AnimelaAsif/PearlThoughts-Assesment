@@ -1,4 +1,4 @@
-<!-- # PearlThoughts-Assesment
+# PearlThoughts-Assesment
 
 Commands to run the Terraform code
 
@@ -11,4 +11,4 @@ Commands to run the Terraform code
 4.  terraform apply 
      - This is used to apply the terraform code & its combined with terraform plan command
 5.  terrform destroy
-     - This is used to destroy the terraform code -->
+     - This is used to destroy the terraform code
