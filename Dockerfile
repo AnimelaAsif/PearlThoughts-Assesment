@@ -1,11 +1,8 @@
 FROM node:latest
 
-RUN npm install -g @medusajs/medusa-cli
-RUN medusa new medusa-app
-
-WORKDIR /medusa-app/
-
-RUN medusa develop
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
 EXPOSE 7001
-
-CMD ["npm", "start"]
+CMD ["node", "app.js"]
